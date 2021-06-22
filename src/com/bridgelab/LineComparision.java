@@ -19,13 +19,13 @@ public class LineComparision {
         Double distanceTwo=Math.sqrt(Math.pow(p2-p1,2)+ Math.pow(q2-q1,2));
         System.out.println("distance between"+"("+p1+","+q1+"),"+"("+p2+","+q2+")"+"is"+" " + distanceOne);
         System.out.println("distance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+")"+"is"+" " + distanceTwo);
-        if (distanceOne.equals(distanceTwo))
-        {
-            System.out.println("Distances are equal");
-        }
-        else
-        {
-            System.out.println("Distances are different");
+        int val = distanceOne.compareTo(distanceTwo);
+        if (val > 0) {
+            System.out.println("distance1 is greater than distance2");
+        } else if (val < 0) {
+            System.out.println("distance1 is less than distance2");
+        } else {
+            System.out.println("distance1 is equal to distance2");
         }
     }
     public static void main(String[] args) {
