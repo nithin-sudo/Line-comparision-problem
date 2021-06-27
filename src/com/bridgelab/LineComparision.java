@@ -1,7 +1,10 @@
 package com.bridgelab;
 import java.util.Scanner;
 public class LineComparision {
-    public static void lineDistance() {
+    /**
+     * calculates the distance between two points and comparing the two distances.
+     */
+    public  void lineDistance() {
         int x1,x2,y1,y2;
         int p1,p2,q1,q2;
         Scanner sc = new Scanner(System.in);
@@ -29,6 +32,7 @@ public class LineComparision {
         }
     }
     public static void main(String[] args) {
-        LineComparision.lineDistance();
+        LineComparision linecomparision = new LineComparision();
+        linecomparision.lineDistance();
     }
 }
